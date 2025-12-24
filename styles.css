@@ -78,12 +78,9 @@ a{ color: inherit; }
 
 /* Left / Center / Right */
 .nav-left{
-  grid-column: 1;
-  grid-row: 1;
-  display: flex;
   justify-content: flex-end;
+  padding-right: 10px; /* pulls toward center */
 }
-
 .brand-center{
   grid-column: 2;
   grid-row: 1;
@@ -92,10 +89,8 @@ a{ color: inherit; }
 }
 
 .nav-right{
-  grid-column: 3;
-  grid-row: 1;
-  display: flex;
   justify-content: flex-start;
+  padding-left: 10px;  /* pulls toward center */
 }
 
 /* Donate under logo */
@@ -109,24 +104,19 @@ a{ color: inherit; }
 
 /* Navigation */
 .nav{
-  display:flex;
-  align-items:center;
-  gap: 10px;
-  flex-wrap: wrap;
+  gap: 18px;           /* was 10px */
 }
 
 .nav a{
-  text-decoration:none;
-  font-size: 14px;
-  color: var(--muted);
-  padding: 8px 10px;
-  border-radius: 12px;
-  white-space: nowrap;
+  font-weight: 700;    /* bolder but not shouty */
+  letter-spacing: .02em;
+  color: var(--primary);
+  padding: 10px 12px;  /* slightly larger hit area */
 }
 
 .nav a:hover{
-  background: rgba(16,18,20,.05);
-  color: var(--text);
+  background: rgba(1,20,62,.06);
+  color: var(--primary);
 }
 
 /* Logo */
