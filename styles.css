@@ -51,9 +51,8 @@ a{ color: inherit; }
 .skip:focus{ left:12px; z-index:999; }
 
 /* ===========================
-   KILL DUPLICATE NAV ROW (UNDER HEADER)
-   - this hides the second row you’re seeing in the screenshot
-   - ideally you remove it from HTML, but this prevents it showing
+   HIDE DUPLICATE NAV ROW (UNDER HEADER)
+   (Prevents the second row of links you saw)
    =========================== */
 .topbar + nav,
 .topbar + .nav,
@@ -68,10 +67,11 @@ a{ color: inherit; }
 }
 
 /* ===========================
-   HEADER / NAV (NOT STICKY)
+   HEADER / NAV
+   LOGO LEFT — LINKS + DONATE RIGHT
    =========================== */
 .topbar{
-  position: relative; /* NOT sticky */
+  position: relative; /* not sticky */
   z-index: 50;
   background: rgba(255,255,255,.92);
   backdrop-filter: blur(14px);
@@ -80,63 +80,45 @@ a{ color: inherit; }
 
 .header-grid{
   display: grid;
-
-  /* Narrower sides so links sit closer to center logo */
-  grid-template-columns: minmax(140px, 180px) auto minmax(140px, 180px);
-  grid-template-rows: auto auto;
-
+  grid-template-columns: auto 1fr; /* logo | right side */
   align-items: center;
-  gap: 10px 8px;
   padding: 16px 0;
+  gap: 18px;
 }
 
-/* Left nav */
-.nav-left{
-  grid-column: 1;
-  grid-row: 1;
-  display: flex;
-  justify-content: flex-end; /* pulls toward logo */
-  padding-right: 4px;
-}
-
-/* Center logo */
+/* Logo left */
 .brand-center{
-  grid-column: 2;
-  grid-row: 1;
+  grid-column: 1;
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
-/* Right nav */
-.nav-right{
-  grid-column: 3;
-  grid-row: 1;
-  display: flex;
-  justify-content: flex-start; /* pulls toward logo */
-  padding-left: 4px;
-}
-
-/* Donate row under logo */
-.donate-row{
-  grid-column: 2;
-  grid-row: 2;
-  display: flex;
-  justify-content: center;
-  margin-top: -6px;
-}
-
-/* BIGGER logo */
 .logo-img{
-  height: 200px; /* adjust if you want bigger */
+  height: 120px; /* adjust bigger/smaller */
   width: auto;
   display: block;
 }
 
-/* Clean nav links (NO pills) */
+/* Right side: links + donate */
+.nav-right{
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 22px;
+}
+
+/* Hide old layout containers if they exist */
+.nav-left,
+.donate-row{
+  display: none !important;
+}
+
+/* Nav links (no pills) */
 .nav{
-  display:flex;
-  align-items:center;
-  gap: 22px; /* spacing between links */
+  display: flex;
+  align-items: center;
+  gap: 22px;
   flex-wrap: wrap;
 }
 
@@ -146,8 +128,7 @@ a{ color: inherit; }
   font-size: 14px;
   font-weight: 850;
   letter-spacing: .02em;
-  padding: 6px 6px;
-  border-radius: 10px;
+  padding: 6px 4px;
 }
 
 .nav a:hover{
@@ -155,13 +136,13 @@ a{ color: inherit; }
   text-underline-offset: 7px;
 }
 
-/* Active link (optional) */
+/* Optional active state */
 .nav a.active{
   text-decoration: underline;
   text-underline-offset: 7px;
 }
 
-/* Buttons (Donate + CTAs) */
+/* Buttons */
 .btn{
   display:inline-flex;
   align-items:center;
@@ -189,11 +170,11 @@ a{ color: inherit; }
 .btn.small{ padding: 10px 12px; border-radius: 12px; }
 .btn.full{ width: 100%; }
 
-/* Big donate under logo */
+/* Donate button on right */
 .btn-donate{
-  padding: 14px 28px;
-  font-size: 16px;
-  border-radius: 18px;
+  padding: 12px 22px;
+  font-size: 14px;
+  border-radius: 16px;
 }
 
 /* ===========================
@@ -402,17 +383,21 @@ a{ color: inherit; }
 @media (max-width: 720px){
   .header-grid{
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
     justify-items: center;
     text-align: center;
     gap: 12px;
   }
 
-  .nav-left{ grid-column: 1; grid-row: 2; justify-content: center; padding: 0; }
-  .brand-center{ grid-column: 1; grid-row: 1; }
-  .donate-row{ grid-column: 1; grid-row: 3; margin-top: 0; }
-  .nav-right{ grid-column: 1; grid-row: 4; justify-content: center; padding: 0; }
+  .brand-center{
+    justify-content: center;
+  }
 
-  .logo-img{ height: 140px; }
-  .nav{ gap: 18px; }
+  .nav-right{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .logo-img{ height: 100px; }
+  .nav{ gap: 16px; }
 }
