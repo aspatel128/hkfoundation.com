@@ -1,3 +1,4 @@
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
   <meta name="description" content="Donate to support the Hiraben Kodarbhai Foundation. Give by card, PayPal/Venmo, or Cash App." />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="page-donate">
+<body>
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="topbar">
@@ -36,21 +37,11 @@
   </header>
 
   <main id="main">
-    <section class="page-hero" aria-label="Donate header">
-      <div class="wrap">
-        <div class="breadcrumb">Foundation / Donate</div>
-        <h1>Support our work</h1>
-        <p class="lead">
-          Your donation helps us support families, youth, and community initiatives
-          across local communities in Iowa and Ohio.
-        </p>
-      </div>
-    </section>
 
     <section class="section">
       <div class="wrap">
         <div class="section-head">
-          <h2>Ways to donate</h2>
+          <h2>Donate</h2>
           <p>Choose the option that works best for you. All donations go toward local impact.</p>
         </div>
 
@@ -59,43 +50,53 @@
           <!-- Credit / Debit -->
           <article class="card donate-card" aria-label="Donate by card">
             <div class="card-top">
+              <div class="chip">Secure</div>
               <h3>Credit or Debit Card</h3>
             </div>
+
             <p>Fast and secure donations using major credit and debit cards.</p>
 
-            <!-- Replace with your real Stripe donation link -->
-            <a class="btn full" href="https://donate.stripe.com/YOUR_LINK" target="_blank" rel="noopener noreferrer">
-              Donate with Card
-            </a>
-
-            <p class="fine">Powered by Stripe. Opens in a new tab.</p>
+            <!-- NEW: CTA wrapper so the button + fine text can sit lower together -->
+            <div class="donate-cta">
+              <!-- Replace with your real Stripe donation link -->
+              <a class="btn full" href="https://donate.stripe.com/YOUR_LINK" target="_blank" rel="noopener noreferrer">
+                Donate with Card
+              </a>
+              <p class="fine">Powered by Stripe. Opens in a new tab.</p>
+            </div>
           </article>
 
           <!-- PayPal / Venmo -->
           <article class="card donate-card" aria-label="Donate with PayPal or Venmo">
             <div class="card-top">
+              <div class="chip">Popular</div>
               <h3>PayPal or Venmo</h3>
             </div>
+
             <p>Use PayPal, Venmo, or a linked card through PayPal.</p>
 
-            <!-- Replace with your real PayPal donate link / hosted button id -->
-            <a class="btn full" href="https://www.paypal.com/donate/?hosted_button_id=YOUR_ID" target="_blank" rel="noopener noreferrer">
-              Donate with PayPal / Venmo
-            </a>
-
-            <p class="fine">Powered by PayPal. Opens in a new tab.</p>
+            <!-- NEW: CTA wrapper so the button + fine text can sit lower together -->
+            <div class="donate-cta">
+              <!-- Replace with your real PayPal donate link / hosted button id -->
+              <a class="btn full" href="https://www.paypal.com/donate/?hosted_button_id=YOUR_ID" target="_blank" rel="noopener noreferrer">
+                Donate with PayPal / Venmo
+              </a>
+              <p class="fine">Powered by PayPal. Opens in a new tab.</p>
+            </div>
           </article>
 
           <!-- Cash App -->
           <article class="card donate-card" aria-label="Donate via Cash App">
             <div class="card-top">
+              <div class="chip">Direct</div>
               <h3>Cash App</h3>
             </div>
+
             <p>Send a donation directly using Cash App.</p>
 
-            <div class="panel" style="margin-top: 12px;">
+            <div class="panel">
               <div class="fine" style="margin-bottom: 6px;">Cash App tag</div>
-              <div style="font-size: 1.25rem; font-weight: 800; letter-spacing: 0.5px;">
+              <div style="font-size: 1.25rem; font-weight: 900; letter-spacing: 0.5px;">
                 $HKFoundation
               </div>
               <div class="fine" style="margin-top: 8px;">
@@ -103,16 +104,14 @@
               </div>
             </div>
 
-            <a class="btn outline full" href="contact.html">
-              Need help donating?
-            </a>
+            <a class="btn outline full" href="contact.html">Need help donating?</a>
           </article>
 
         </div>
       </div>
     </section>
 
-    <section class="section light">
+    <section class="section alt">
       <div class="wrap">
         <div class="section-head">
           <h2>Where your donation goes</h2>
@@ -122,6 +121,7 @@
         <div class="grid3">
           <article class="card">
             <div class="card-top">
+              <div class="chip">Care</div>
               <h3>Direct community support</h3>
             </div>
             <p>Support for families through essentials, drives, and trusted local partners.</p>
@@ -129,6 +129,7 @@
 
           <article class="card">
             <div class="card-top">
+              <div class="chip">Opportunity</div>
               <h3>Youth and education</h3>
             </div>
             <p>Support for students, programs, mentoring, and long-term opportunities.</p>
@@ -136,25 +137,15 @@
 
           <article class="card">
             <div class="card-top">
+              <div class="chip">Service</div>
               <h3>Community projects</h3>
             </div>
             <p>Projects and partnerships that strengthen neighborhoods and bring people together.</p>
           </article>
         </div>
-
-        <div class="cta-band" style="margin-top: 20px;">
-          <div>
-            <div class="cta-title">Prefer a different method?</div>
-            <div class="cta-sub">We can also coordinate check or in-person giving.</div>
-          </div>
-          <a class="btn" href="contact.html">Contact us</a>
-        </div>
-
-        <p class="fine" style="margin-top: 14px;">
-          Note: Please only claim a tax deduction if/when we confirm tax-deductible status.
-        </p>
       </div>
     </section>
+
   </main>
 
   <footer class="footer">
@@ -170,3 +161,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+```
