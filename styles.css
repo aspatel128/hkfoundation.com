@@ -71,13 +71,13 @@ a{ color: inherit; }
 
 .header-grid{
   display:grid;
-  grid-template-columns: minmax(120px,180px) auto minmax(120px,180px);
+  grid-template-columns: minmax(120px,150px) auto minmax(120px,150px);
   gap: 10px 8px; /* smaller horizontal gap */
   align-items:center;
 }
 
 /* Nav positioning */
-.nav-left{ justify-content: flex-end; padding-right: 6px; }
+.nav-left{ justify-content: flex-end; padding-right: 40px; }
 
 .brand-center{
   grid-column:2;
@@ -86,7 +86,7 @@ a{ color: inherit; }
   justify-content:center;
 }
 
-.nav-right{ justify-content: flex-start; padding-left: 6px; }
+.nav-right{ justify-content: flex-start; padding-left: 40px; }
 
 /* Donate row */
 .donate-row{
