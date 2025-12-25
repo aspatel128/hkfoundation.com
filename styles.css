@@ -118,42 +118,29 @@ a{ color: inherit; }
   display:block;
 }
 
-/* NAV BUTTONS */
+/* Clean text links (no pills) */
 .nav{
   display:flex;
   align-items:center;
-  gap: 26px;
+  gap: 18px;
 }
 
 .nav a{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-
-  padding: 12px 24px;
-  border-radius: 999px;
-
+  background: transparent !important;
+  border: none !important;
+  padding: 6px 8px;
+  border-radius: 0;
   font-size: 14px;
-  font-weight: 800;
-  letter-spacing: .04em;
-  text-transform: uppercase;
-
-  text-decoration:none;
+  font-weight: 750;
+  letter-spacing: .02em;
+  text-transform: none;
   color: var(--primary);
-
-  background: rgba(1,20,62,.08);
-  border: 1px solid rgba(1,20,62,.18);
-
-  transition:
-    background .2s ease,
-    box-shadow .2s ease,
-    transform .15s ease;
+  text-decoration: none;
 }
 
 .nav a:hover{
-  background: rgba(1,20,62,.14);
-  box-shadow: 0 6px 18px rgba(1,20,62,.22);
-  transform: translateY(-1px);
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
 
 .nav a.active{
