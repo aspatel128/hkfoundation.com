@@ -534,3 +534,48 @@ main > :first-child{
     gap: 10px;
   }
 }
+
+/* ===========================
+   DONATE PAGE — PUSH BUTTONS DOWN
+   Requires: <body class="page-donate">
+   Paste at VERY BOTTOM of styles.css
+   =========================== */
+
+/* Give donate cards a consistent height so the CTA can sit lower */
+.page-donate .grid3{
+  align-items: start; /* prevents weird stretching behavior */
+}
+
+.page-donate .donate-grid > .donate-card{
+  min-height: 330px;          /* adjust: 300–380 depending on preference */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Push the main donate button DOWN inside the first two cards */
+.page-donate .donate-grid > .donate-card a.btn.full{
+  margin-top: auto;           /* KEY: sends button to the bottom area */
+}
+
+/* Keep the “Powered by …” text directly under the button */
+.page-donate .donate-grid > .donate-card .fine{
+  margin-top: 10px;
+}
+
+/* Give the Cash App panel spacing so it doesn't feel cramped */
+.page-donate .donate-grid > .donate-card .panel{
+  margin-top: 14px;
+}
+
+/* Extra breathing room inside donate cards */
+.page-donate .donate-grid > .donate-card{
+  padding: 26px;
+}
+
+/* Mobile */
+@media (max-width: 980px){
+  .page-donate .donate-grid > .donate-card{
+    min-height: auto;         /* natural height on mobile */
+    padding: 22px;
+  }
+}
