@@ -745,3 +745,15 @@ a{ color: inherit; text-decoration: none; }
   object-fit: cover;          /* fills container */
   object-position: center top;/* keeps face higher in frame */
 }
+
+/* DONATE PAGE — force 2x2 grid */
+.donate-page .goals-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Mobile: stack cleanly */
+@media (max-width: 720px) {
+  .donate-page .goals-grid {
+    grid-template-columns: 1fr;
+  }
+}
