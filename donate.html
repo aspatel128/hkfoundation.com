@@ -1,164 +1,183 @@
-```html
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Donate | Hiraben Kodarbhai Foundation</title>
-  <meta name="description" content="Donate to support the Hiraben Kodarbhai Foundation. Give by card, PayPal/Venmo, or Cash App." />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <a class="skip" href="#main">Skip to content</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Donate | Hiraben Kodarbhai Foundation</title>
+    <meta name="description" content="Support the Hiraben Kodarbhai Foundation through secure giving options." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  <header class="topbar">
-    <div class="wrap">
-      <div class="header-grid">
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
 
-        <div class="brand-center">
-          <a href="index.html" aria-label="HK Foundation Home">
-            <img class="logo-img" src="logo.png" alt="HK Foundation logo" />
-          </a>
-        </div>
+    <!-- SAME HEADER AS HOME/STORY/IMPACT -->
+    <header class="site-header" aria-label="Site header">
+      <div class="wrap nav-inner">
+        <nav class="nav-left" aria-label="Primary left">
+          <a class="nav-btn" href="stories.html">Story</a>
+          <a class="nav-btn" href="impact.html">Impact</a>
+        </nav>
 
-        <div class="nav-right">
-          <nav class="nav" aria-label="Primary">
-            <a href="impact.html">Impact</a>
-            <a href="focus-areas.html">Focus Areas</a>
-            <a href="stories.html">Stories</a>
-            <a href="contact.html">Contact</a>
-          </nav>
+        <a class="logo" href="index.html" aria-label="HK Foundation Home">
+          <img src="logo.png" alt="HK Foundation logo" />
+        </a>
 
-          <a class="btn btn-donate" href="donate.html" aria-current="page">Donate</a>
-        </div>
-
+        <nav class="nav-right" aria-label="Primary right">
+          <a class="nav-btn" href="contact.html">Contact</a>
+          <a class="nav-btn" href="donate.html" aria-current="page">Donate</a>
+        </nav>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main id="main">
-
-    <section class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Donate</h2>
-          <p>Choose the option that works best for you. All donations go toward local impact.</p>
+    <main id="main">
+      <!-- PAGE HERO -->
+      <section class="page-hero" aria-label="Donate header">
+        <div class="wrap page-hero-inner">
+          <h1>Donate</h1>
+          <p class="page-hero-sub">
+            Your support helps us build scholarships, fund local initiatives, and respond to real community needs.
+          </p>
         </div>
+      </section>
 
-        <div class="grid3 donate-grid">
+      <!-- QUICK TRUST LINE -->
+      <section class="mission" aria-label="Donation note">
+        <div class="wrap mission-inner">
+          <p>
+            Choose the option that’s easiest for you. If you have any questions, reach out on our
+            <a href="contact.html" style="text-decoration: underline; text-underline-offset: 4px;">contact page</a>.
+          </p>
+        </div>
+      </section>
 
-          <!-- Credit / Debit -->
-          <article class="card donate-card" aria-label="Donate by card">
-            <div class="card-top">
-              <div class="chip">Secure</div>
-              <h3>Credit or Debit Card</h3>
-            </div>
+      <!-- DONATION OPTIONS -->
+      <section class="goals" aria-label="Donation options">
+        <div class="wrap">
+          <h2 class="section-title">Ways to give</h2>
 
-            <p>Fast and secure donations using major credit and debit cards.</p>
+          <div class="goals-grid" role="list">
+            <!-- GIVEBUTTER (Card) -->
+            <article class="goal-card" role="listitem">
+              <div class="goal-img">
+                <!-- replace with your icon/silhouette if you want -->
+                <img src="givebutter.png" alt="Givebutter logo" />
+              </div>
+              <h3>Debit / Credit (Givebutter)</h3>
+              <p>
+                Fast, secure donation by card. Recurring giving is available if you’d like to support monthly.
+              </p>
+              <p>
+                <a class="btn-primary" href="https://givebutter.com/YOUR-LINK" target="_blank" rel="noopener">
+                  Donate by card
+                </a>
+              </p>
+            </article>
 
-            <!-- NEW: CTA wrapper so the button + fine text can sit lower together -->
-            <div class="donate-cta">
-              <!-- Replace with your real Stripe donation link -->
-              <a class="btn full" href="https://donate.stripe.com/YOUR_LINK" target="_blank" rel="noopener noreferrer">
-                Donate with Card
-              </a>
-              <p class="fine">Powered by Stripe. Opens in a new tab.</p>
-            </div>
-          </article>
+            <!-- PAYPAL -->
+            <article class="goal-card" role="listitem">
+              <div class="goal-img">
+                <img src="paypal.png" alt="PayPal logo" />
+              </div>
+              <h3>PayPal</h3>
+              <p>
+                Prefer PayPal? Use your PayPal balance or linked payment method.
+              </p>
+              <p>
+                <a class="btn-primary" href="https://paypal.me/YOURNAME" target="_blank" rel="noopener">
+                  Donate with PayPal
+                </a>
+              </p>
+            </article>
 
-          <!-- PayPal / Venmo -->
-          <article class="card donate-card" aria-label="Donate with PayPal or Venmo">
-            <div class="card-top">
-              <div class="chip">Popular</div>
-              <h3>PayPal or Venmo</h3>
-            </div>
-
-            <p>Use PayPal, Venmo, or a linked card through PayPal.</p>
-
-            <!-- NEW: CTA wrapper so the button + fine text can sit lower together -->
-            <div class="donate-cta">
-              <!-- Replace with your real PayPal donate link / hosted button id -->
-              <a class="btn full" href="https://www.paypal.com/donate/?hosted_button_id=YOUR_ID" target="_blank" rel="noopener noreferrer">
-                Donate with PayPal / Venmo
-              </a>
-              <p class="fine">Powered by PayPal. Opens in a new tab.</p>
-            </div>
-          </article>
-
-          <!-- Cash App -->
-          <article class="card donate-card" aria-label="Donate via Cash App">
-            <div class="card-top">
-              <div class="chip">Direct</div>
+            <!-- CASH APP -->
+            <article class="goal-card" role="listitem">
+              <div class="goal-img">
+                <img src="cashapp.png" alt="Cash App logo" />
+              </div>
               <h3>Cash App</h3>
-            </div>
+              <p>
+                Send a donation via Cash App using our $Cashtag.
+              </p>
+              <p style="margin: 0 16px 16px; color: rgba(20,20,20,.72);">
+                <strong>$HKFoundation</strong> <!-- change to your real cashtag -->
+              </p>
+              <p>
+                <a class="btn-primary" href="https://cash.app/$HKFoundation" target="_blank" rel="noopener">
+                  Open Cash App
+                </a>
+              </p>
+            </article>
 
-            <p>Send a donation directly using Cash App.</p>
-
-            <div class="panel">
-              <div class="fine" style="margin-bottom: 6px;">Cash App tag</div>
-              <div style="font-size: 1.25rem; font-weight: 900; letter-spacing: 0.5px;">
-                $HKFoundation
+            <!-- GOFUNDME -->
+            <article class="goal-card" role="listitem">
+              <div class="goal-img">
+                <img src="gofundme.png" alt="GoFundMe logo" />
               </div>
-              <div class="fine" style="margin-top: 8px;">
-                Include your email in the note if you’d like a receipt.
-              </div>
+              <h3>GoFundMe</h3>
+              <p>
+                Support our current campaign and share it with friends and family.
+              </p>
+              <p>
+                <a class="btn-primary" href="https://gofund.me/YOUR-LINK" target="_blank" rel="noopener">
+                  View GoFundMe
+                </a>
+              </p>
+            </article>
+          </div>
+
+          <!-- CTA BAND -->
+          <div class="soft-accent-band" aria-label="Donate call to action">
+            <div>
+              <div class="soft-accent-title">Want to help in a bigger way?</div>
+              <div class="soft-accent-sub">Partner, sponsor a program, or donate goods/services for local projects.</div>
             </div>
+            <a class="btn-primary" href="contact.html">Reach out</a>
+          </div>
 
-            <a class="btn outline full" href="contact.html">Need help donating?</a>
-          </article>
-
+          <!-- SMALL FOOTNOTE -->
+          <div style="height: 18px"></div>
+          <div class="events-box" aria-label="Donation transparency note">
+            We’ll update our Impact page over time with milestones and progress as programs launch.
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section alt">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Where your donation goes</h2>
-          <p>We prioritize low overhead and local impact.</p>
+      <!-- FOOTER -->
+      <footer class="site-footer" aria-label="Footer">
+        <div class="wrap footer-grid">
+          <div class="footer-col">
+            <h3 class="footer-title">Hiraben Kodarbhai Foundation</h3>
+            <p class="footer-item">NO NUMBER YET</p>
+            <p class="footer-item"><a href="mailto:info@hkcommunity.org">info@hkcommunity.org</a></p>
+          </div>
+
+          <div class="footer-col">
+            <p class="footer-item">Cincinnati, OH &amp; Waterloo, IA,</p>
+            <p class="footer-item">Logan Ave, Waterloo, IA</p>
+
+            <div class="social">
+              <a href="#" aria-label="Facebook">Facebook</a>
+              <a href="#" aria-label="Instagram">Instagram</a>
+            </div>
+          </div>
+
+          <div class="footer-col footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Accessibility Statement</a>
+            <a href="#">Terms &amp; Conditions</a>
+            <a href="#">Refund Policy</a>
+          </div>
         </div>
 
-        <div class="grid3">
-          <article class="card">
-            <div class="card-top">
-              <div class="chip">Care</div>
-              <h3>Direct community support</h3>
-            </div>
-            <p>Support for families through essentials, drives, and trusted local partners.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-top">
-              <div class="chip">Opportunity</div>
-              <h3>Youth and education</h3>
-            </div>
-            <p>Support for students, programs, mentoring, and long-term opportunities.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-top">
-              <div class="chip">Service</div>
-              <h3>Community projects</h3>
-            </div>
-            <p>Projects and partnerships that strengthen neighborhoods and bring people together.</p>
-          </article>
+        <div class="wrap footer-bottom">
+          <small>© <span id="y"></span> by Hiraben Kodarbhai Foundation. All rights reserved.</small>
         </div>
-      </div>
-    </section>
 
-  </main>
-
-  <footer class="footer">
-    <div class="wrap footer-inner">
-      <div>
-        <div class="brand-name">Hiraben Kodarbhai Foundation</div>
-        <div class="brand-tag">Legacy in action. Community first.</div>
-      </div>
-      <div class="fine">© <span id="y"></span> All rights reserved.</div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+        <script>
+          document.getElementById("y").textContent = new Date().getFullYear();
+        </script>
+      </footer>
+    </main>
+  </body>
 </html>
-```
