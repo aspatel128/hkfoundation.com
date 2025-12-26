@@ -718,3 +718,15 @@ a{ color: inherit; text-decoration: none; }
   display: block;
   margin: 0.75rem auto 1rem;
 }
+
+/* Contact page: force 2x2 grid for people */
+.goals-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Mobile: stack nicely */
+@media (max-width: 720px) {
+  .goals-grid {
+    grid-template-columns: 1fr;
+  }
+}
