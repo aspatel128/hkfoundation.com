@@ -1,140 +1,196 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Impact | Hiraben Kodarbhai Foundation</title>
-  <meta name="description" content="See how support turns into local community impact." />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <a class="skip" href="#main">Skip to content</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Impact | Hiraben Kodarbhai Foundation</title>
+    <meta name="description" content="Learn about the impact our foundation aims to create in local communities." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<header class="topbar">
-  <div class="wrap">
-    <div class="header-grid">
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
 
-      <div class="brand-center">
-        <a href="index.html" aria-label="HK Foundation Home">
-          <img class="logo-img" src="logo.png" alt="HK Foundation logo" />
-        </a>
-      </div>
-
-      <div class="nav-right">
-        <nav class="nav" aria-label="Primary">
-          <a href="impact.html">Impact</a>
-          <a href="focus-areas.html">Focus Areas</a>
-          <a href="stories.html">Stories</a>
-          <a href="contact.html">Contact</a>
+    <!-- NAVIGATION (same style as home and story pages) -->
+    <header class="site-header" aria-label="Site header">
+      <div class="wrap nav-inner">
+        <nav class="nav-left" aria-label="Primary left">
+          <a class="nav-btn" href="stories.html">Story</a>
+          <a class="nav-btn" href="impact.html" aria-current="page">Impact</a>
         </nav>
 
-        <a class="btn btn-donate" href="donate.html">Donate</a>
+        <a class="logo" href="index.html" aria-label="HK Foundation Home">
+          <img src="logo.png" alt="HK Foundation logo" />
+        </a>
+
+        <nav class="nav-right" aria-label="Primary right">
+          <a class="nav-btn" href="contact.html">Contact</a>
+          <a class="nav-btn" href="donate.html">Donate</a>
+        </nav>
       </div>
+    </header>
 
-    </div>
-  </div>
-</header>
-
-
-  <main id="main">
-    <section class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Your impact</h2>
-          <p>
-            This page is designed to be updated over time. Start simple, then replace placeholders with real data.
+    <main id="main">
+      <!-- PAGE HERO -->
+      <section class="page-hero" aria-label="Impact header">
+        <div class="wrap page-hero-inner">
+          <h1>Our Impact</h1>
+          <p class="page-hero-sub">
+            Our impact is rooted in small, consistent actions that strengthen families, support students, and build
+            healthier communities over time.
           </p>
         </div>
+      </section>
 
-        <div class="stats-row">
-          <div class="stat">
-            <div class="stat-num" id="yearFounded">2025</div>
-            <div class="stat-label">Founded</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">0</div>
-            <div class="stat-label">Families supported</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">0</div>
-            <div class="stat-label">Grants awarded</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">0</div>
-            <div class="stat-label">Volunteer hours</div>
+      <!-- IMPACT METRICS -->
+      <section class="impact-stats" aria-label="Impact metrics">
+        <div class="wrap">
+          <div class="stats-row">
+            <div class="stat">
+              <div class="stat-num">2025</div>
+              <div class="stat-label">Founded</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">0</div>
+              <div class="stat-label">Families supported</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">0</div>
+              <div class="stat-label">Scholarships awarded</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">0</div>
+              <div class="stat-label">Volunteer hours</div>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div style="height:16px"></div>
+      <!-- FOCUS AREAS (using goal-card style) -->
+      <section class="goals" aria-label="Focus areas">
+        <div class="wrap">
+          <h2 class="section-title">Our focus areas</h2>
+          <div class="goals-grid">
+            <article class="goal-card" role="listitem">
+              <div class="goal-img">
+                <!-- replace with your own image -->
+                <img src="education.jpg" alt="Students studying together" />
+              </div>
+              <h3>Education support</h3>
+              <p>
+                We plan to support students through future scholarships, academic resources, and mentorship
+                opportunities—helping them focus on learning instead of financial stress.
+              </p>
+            </article>
 
-        <div class="grid3">
-          <article class="card">
-            <div class="card-top">
-              <div class="chip">Transparency</div>
-              <h3>Where funds go</h3>
-            </div>
-            <p>
-              Use this section to explain your basic approach. Example: direct assistance, partner grants, and local projects.
-            </p>
-            <ul class="mini">
-              <li>Direct community support</li>
-              <li>Youth and education initiatives</li>
-              <li>Community projects and partnerships</li>
-            </ul>
-          </article>
+            <article class="goal-card" role="listitem">
+              <div class="goal-img">
+                <!-- replace with your own image -->
+                <img src="community-assistance.jpg" alt="Community volunteers assisting" />
+              </div>
+              <h3>Community assistance</h3>
+              <p>
+                We aim to assist families and individuals facing short‑term challenges by supporting community
+                initiatives and local aid efforts.
+              </p>
+            </article>
 
-          <article class="card">
-            <div class="card-top">
-              <div class="chip">Community</div>
-              <h3>Local first</h3>
-            </div>
-            <p>
-              We focus on local needs and practical outcomes, working with trusted organizations and people on the ground.
-            </p>
-            <ul class="mini">
-              <li>Trusted local partners</li>
-              <li>Practical, measurable help</li>
-              <li>Long term commitment</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="card-top">
-              <div class="chip">Growth</div>
-              <h3>Built to scale</h3>
-            </div>
-            <p>
-              As the foundation grows, this page becomes your proof of impact for donors, grants, and partners.
-            </p>
-            <ul class="mini">
-              <li>Add annual reports</li>
-              <li>Add testimonials</li>
-              <li>Add audited statements if applicable</li>
-            </ul>
-          </article>
+            <article class="goal-card" role="listitem">
+              <div class="goal-img">
+                <!-- replace with your own image -->
+                <img src="long-term.jpg" alt="Neighborhood improvements" />
+              </div>
+              <h3>Long‑term investment</h3>
+              <p>
+                Our long‑term goal is to invest in initiatives that create lasting benefits—projects that strengthen
+                neighborhoods, encourage stability, and promote opportunity.
+              </p>
+            </article>
+          </div>
         </div>
+      </section>
 
-        <div class="cta-band">
+      <!-- BUILDING THE FOUNDATION -->
+      <section class="mission" aria-label="Building the foundation">
+        <div class="wrap mission-inner">
+          <h2 class="section-title">Building the foundation</h2>
+          <p>
+            While our programs are still taking shape, our impact begins with intention, planning, and community
+            involvement. Every initiative we pursue is designed to be thoughtful, transparent, and sustainable.
+          </p>
+          <ul>
+            <li>Foundation established in honor of our grandparents’ values</li>
+            <li>Community engagement and planning underway</li>
+            <li>Initial fundraising and outreach efforts beginning</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- HOW WE MEASURE IMPACT -->
+      <section class="mission" aria-label="Measuring impact">
+        <div class="wrap mission-inner">
+          <h2 class="section-title">How we measure impact</h2>
+          <p>
+            We are committed to accountability and transparency. As our programs launch, we plan to track our impact
+            through:
+          </p>
+          <ul>
+            <li>Number of students supported</li>
+            <li>Funds raised and distributed</li>
+            <li>Community initiatives completed</li>
+            <li>Partnerships formed</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CALL TO ACTION -->
+      <section aria-label="Call to action">
+        <div class="soft-accent-band">
           <div>
-            <div class="cta-title">Want to help create real local impact?</div>
-            <div class="cta-sub">Donate or reach out to collaborate.</div>
+            <div class="soft-accent-title">Want to help create real local impact?</div>
+            <div class="soft-accent-sub">Donate or reach out to collaborate.</div>
           </div>
-          <a class="btn" href="contact.html#donate">Donate today</a>
+          <a class="btn-primary" href="donate.html">Donate</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER (same as on other pages) -->
+    <footer class="site-footer" aria-label="Footer">
+      <div class="wrap footer-grid">
+        <div class="footer-col">
+          <h3 class="footer-title">Hiraben Kodarbhai Foundation</h3>
+          <p class="footer-item">123-456-7890</p>
+          <p class="footer-item"><a href="mailto:info@example.com">info@example.com</a></p>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-item">Ohio Ave &amp; N Iowa St,</p>
+          <p class="footer-item">Gunnison, CO 81230, USA</p>
+
+          <div class="social">
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="TikTok">TikTok</a>
+          </div>
+        </div>
+
+        <div class="footer-col footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Accessibility Statement</a>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Refund Policy</a>
         </div>
       </div>
-    </section>
-  </main>
 
-  <footer class="footer">
-    <div class="wrap footer-inner">
-      <div>
-        <div class="brand-name">Hiraben Kodarbhai Foundation</div>
-        <div class="brand-tag">Legacy in action. Community first.</div>
+      <div class="wrap footer-bottom">
+        <small>© <span id="y"></span> by Hiraben Kodarbhai Foundation. All rights reserved.</small>
       </div>
-      <div class="fine">© <span id="y"></span> All rights reserved.</div>
-    </div>
-  </footer>
 
-  <script src="script.js"></script>
-</body>
+      <script>
+        // update year automatically
+        document.getElementById("y").textContent = new Date().getFullYear();
+      </script>
+    </footer>
+  </body>
 </html>
